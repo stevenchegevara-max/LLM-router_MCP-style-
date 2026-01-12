@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "LLM Router (Local)",
+  "version": "1.0.0",
+  "description": "Route queries to Groq or OpenAI via local MCP-style router.",
+  "permissions": ["tabs", "contextMenus"],
+  "host_permissions": ["http://localhost:8787/*"],
+  "omnibox": { "keyword": "ai" },
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Ask LLM Router" }
+}
