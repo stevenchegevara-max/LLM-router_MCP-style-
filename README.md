@@ -6,8 +6,6 @@ latency tracking, a browser UI, and a Chrome omnibox extension.
 
 This project treats LLMs as interchangeable infrastructure, not hardcoded vendors.
 
-============================================================
-
 WHY THIS EXISTS
 
 Real-world AI systems need:
@@ -19,8 +17,6 @@ Real-world AI systems need:
 
 This project demonstrates a minimal, production-minded
 multi-LLM control plane.
-
-============================================================
 
 ARCHITECTURE
 
@@ -35,8 +31,6 @@ Groq (fast / cheap)
         v  (fallback on error or timeout)
 OpenAI (higher-quality reasoning)
 
-============================================================
-
 ROUTING BEHAVIOR
 
 - quality = free   -> Groq
@@ -49,8 +43,6 @@ Each response includes:
 - optional fallback_from
 - latency_ms
 - answer
-
-============================================================
 
 API
 
@@ -72,8 +64,6 @@ Response example:
   "answer": "OK"
 }
 
-============================================================
-
 LOCAL UI
 
 Open in browser:
@@ -82,15 +72,11 @@ http://localhost:8787/ui
 
 Acts like a local AI-powered search bar routed through the control plane.
 
-============================================================
-
 SETUP
 
 npm install
 cp .env.example .env
 npm start
-
-============================================================
 
 CHROME EXTENSION
 
@@ -102,7 +88,6 @@ Use omnibox keyword:
 
 ai explain MCP in simple terms
 
-============================================================
 
 NOTES
 
@@ -111,7 +96,6 @@ NOTES
 - The router is designed to extend to other providers
   such as Claude, Gemini, or DeepSeek
 
-============================================================
 
 LICENSE
 
